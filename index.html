@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            flex-flow: column nowrap;
+            color: red;
+            background: darkslategrey;
+        }
+
+        #primary {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+
+        #slider {
+            min-height: 300px;
+            background: cornflowerblue;
+        }
+
+        #boxholder {
+            height: 350px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+
+        .box {
+            min-width: 350px;
+            -webkit-box-shadow: 5px 5px 15px 5px #000000;
+            box-shadow: 5px 5px 15px 5px #000000;
+            flex: 0 0;
+            margin: 15px 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="primary">
+            <div>Menu</div>
+            <div>Logo</div>
+            <div>Einkaufswagen</div>
+        </div>
+        <div id="menu">
+            <a href="./seite2.html">Zu Seite 2</a>
+            <a href="./shop.html">Zum Shop</a>
+        </div>
+    </header>
+    <section>
+        <div>
+            <div id="slider">Slider</div>
+        </div>
+        <div id="boxholder">
+            <div id="nr1" class="box">1</div>
+            <div id="nr2" class="box">2</div>
+            <div id="nr3" class="box">3</div>
+            <div id="nr4" class="box">4</div>
+            <div id="nr5" class="box">5</div>
+            <div id="nr6" class="box">6</div>
+            <div id="nr7" class="box">7</div>
+            <div id="nr8" class="box">8</div>
+        </div>
+    </section>
+</body>
+</html>
